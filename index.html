@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Forest Zoo</title>
+    <style>
+      body,
+      h1,
+      p {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        background-image: url(./images/bg.png);
+      }
+
+      .article-animal {
+        color: #fff;
+        width: 300px;
+        margin: 50px auto;
+      }
+
+      .article-animal_item {
+        vertical-align: bottom;
+      }
+
+      .article-animal-section {
+        background-color: #975c30;
+        padding: 30px 30px 60px;
+        border-radius: 0 0 30px 30px;
+        position: relative;
+      }
+
+      .article-animal-section::before {
+        content: "";
+        background-image: url(./images/green.png);
+        display: block;
+        width: 300px;
+        height: 50px;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+
+      .article-animal-section::after {
+        content: "";
+        display: block;
+        width: 300px;
+        height: 20px;
+        border-bottom: 10px solid #63330f;
+        position: absolute;
+        bottom: 0px;
+        left: 0;
+        border-radius: 0 0 30px 30px;
+      }
+
+      .article-animal-section_title {
+        font-size: 3rem;
+        padding: 30px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <article class="article-animal">
+      <img class="article-animal_item" src="./images/animal07.png" alt="" />
+      <section class="article-animal-section">
+        <h1 class="article-animal-section_title">Fox</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+          commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus
+          et magnis dis parturient montes, nascetur ridiculus mus. Donec quam
+          felis, ultricies nec
+        </p>
+      </section>
+    </article>
+  </body>
+</html>
